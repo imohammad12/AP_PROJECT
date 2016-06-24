@@ -11,6 +11,8 @@
 #include<QGraphicsPixmapItem>
 #include"ball.h"
 #include"whiteblock.h"
+#include"Gamecontroller.h"
+#include"score.h"
 
 class Play: public QGraphicsView
 {
@@ -18,6 +20,7 @@ class Play: public QGraphicsView
 public:
     Play(QWidget * parent=0);
     Ball *ball;
+    Score *score;
 
 private:
     //QGraphicsView * view;

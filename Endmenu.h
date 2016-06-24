@@ -5,6 +5,7 @@
 #include <QWidget>
 #include <QGraphicsScene>
 #include<QPushButton>
+#include"score.h"
 
 class Endmenu: public QGraphicsView{
 public:
@@ -14,6 +15,7 @@ private:
     //QGraphicsView * view;
     QGraphicsScene * scene;
      QPushButton *playagain;
+     Score *score;
 
 public slots:
 

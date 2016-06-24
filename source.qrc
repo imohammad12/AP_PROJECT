@@ -8,5 +8,6 @@
         <file>wall-5.png</file>
         <file>water-circle2.png</file>
         <file>whiteblock-50px.png</file>
+        <file>score.txt</file>
     </qresource>
 </RCC>

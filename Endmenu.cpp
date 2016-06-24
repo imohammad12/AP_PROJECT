@@ -8,19 +8,23 @@ Endmenu::Endmenu(QWidget *parent)
     setScene(scene);// for view
 
     playagain = new QPushButton;
-    QPixmap back(":/startmenu/cool-background.jpg");
-    scene->setBackgroundBrush(back.scaled(500,300,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+    QPixmap back(":/play/cool-background.jpg");
+    scene->setBackgroundBrush(back.scaled(500,600,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
 
     playagain = new QPushButton(" Play again !");
     playagain->setGeometry(50,100,100,50);
     scene->addWidget(playagain);
     //connect(playagain,SIGNAL(clicked(bool)),this,SLOT(startgame()));//creating play obj ->change the slot
     connect(playagain,SIGNAL(clicked(bool)),this,SLOT(close()));
-    scene->setSceneRect(0,0,400,500);
+    scene->setSceneRect(0,0,500,600);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    setFixedSize(400,500);
+    setFixedSize(500,600);
     show();
+
+    score=new Score;
+    score->showtopscore();
+    scene->addItem(score);
 
 }
 

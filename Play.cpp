@@ -1,11 +1,13 @@
 #include"Play.h"
 #include"Mediumwall.h"
 
+extern Gamecontroller * gamecontroller;
+
 Play::Play(QWidget *parent)
 {
     scene=new QGraphicsScene;
     setScene(scene);
-    QPixmap back(":/startmenu/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg");
+    QPixmap back(":/play/background.jpg");
     scene->setBackgroundBrush(back.scaled(500,600,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
     scene->setSceneRect(0,0,500,600);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -18,6 +20,9 @@ Play::Play(QWidget *parent)
 
     Whiteblock * white=new Whiteblock;
     scene->addItem(white);
+
+    score=new Score;
+    scene->addItem(score);
 
 }
 
