@@ -1,18 +1,26 @@
-#ifndef STARTMENU_H
-#define STARTMENU_H
+//#ifndef STARTMENU_H
+//#define STARTMENU_H
 
-#include <QGraphicsView>
-#include <QWidget>
-#include <QGraphicsScene>
+//#include <QObject>
+//#include <QGraphicsScene>
+//#include <QPushButton>
+
+//class Startmenu : public QObject{
+//    Q_OBJECT
+
+//public:
+//    Startmenu(QObject *parent=0);
+//private:
+//    //QGraphicsView * view;
+//    QGraphicsScene * scene;
+//    QPushButton *play;
+
+//public slots:
+//    void pressedstartkey(bool);
+
+//signals:
 
 
-class Startmenu: public QGraphicsView{
-public:
-    Startmenu(QWidget * parent=0);
+//};
 
-    QGraphicsScene * scene;
-
-
-};
-
-#endif // STARTMENU_H
+//#endif // STARTMENU_H

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/endmenu"/>
+    <qresource prefix="/startmenu">
+        <file>cool-background.jpg</file>
+    </qresource>
+    <qresource prefix="/play">
+        <file>Martz90-Circle-Chrome.ico</file>
+        <file>o_854cf0b2dc35f874-0.jpg</file>
+        <file>wall(2).png</file>
+        <file>background2.jpg</file>
+        <file>wall(7).png</file>
+    </qresource>
+</RCC>

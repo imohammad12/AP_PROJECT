@@ -6,15 +6,31 @@
 #include <QGraphicsItem>
 #include<QTimer>
 #include<QGraphicsView>
+#include"Endmenu.h"
+#include"Play.h"
+#include "startmenuer.h"
 
-class Cheker:public QObject{
+
+
+class Gamecontroller : public QObject
+{
     Q_OBJECT
 public:
-    Cheker ();
-    QTimer * timer3 = new QTimer(this);
-    void newgame();
+    Gamecontroller ();
+
+
+    void startgame();
+    void endgame();
+    void playagain();
+
+    //void newgame();
+//    QTimer * timer;
+//     Endmenu *end;
+//     Startmenu *start;
+//     Play *play;
 public slots:
-    void chek();
+
+     //->using in startmenu connect ??
 
 };
 
