@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/endmenu"/>
+    <qresource prefix="/startmenu">
+        <file>cool-background.jpg</file>
+    </qresource>
+    <qresource prefix="/play">
+        <file>o_854cf0b2dc35f874-0.jpg</file>
+        <file>background2.jpg</file>
+        <file>forcahngepic.png</file>
+        <file>water-circle2.png</file>
+        <file>whiteblock-50px.png</file>
+        <file>score.txt</file>
+        <file>C:/Users/mohammad/Pictures/QT Flappy bird/ball-final.png</file>
+        <file>Floral-Background.jpg</file>
+        <file>wall(11).png</file>
+        <file>wall(9).png</file>
+        <file>wall(10).png</file>
+        <file>wall(13).png</file>
+        <file>wall(14).png</file>
+        <file>wall(15).png</file>
+        <file>aroundwall.png</file>
+        <file>gameover.wav</file>
+        <file>Difficult_.mp3</file>
+    </qresource>
+</RCC>
