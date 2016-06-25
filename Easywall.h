@@ -5,6 +5,7 @@
 #include <QObject>
 #include <QGraphicsItem>
 #include <QTimer>
+
 class Easywall: public QGraphicsPixmapItem, public Walls {
 public:
     Easywall(int wallnum,QGraphicsItem * parent=0);

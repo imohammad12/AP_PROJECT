@@ -15,7 +15,7 @@ Endmenu::Endmenu(QObject *parent2) : QObject()
 
     playagain = new QPushButton;
     QPixmap back(":/startmenu/cool-background.jpg");
-    scene->setBackgroundBrush(back.scaled(500,300,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+    scene->setBackgroundBrush(back.scaled(500,500,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
 
     playagain = new QPushButton(" Play again !");
     playagain->setGeometry(50,100,100,50);
@@ -29,6 +29,10 @@ Endmenu::Endmenu(QObject *parent2) : QObject()
     Eview->setFixedSize(500,500);
     Eview->show();
 
+    score= new Score;
+    score->showtopscore();
+    scene->addWidget(score->label);
+    scene->addItem(score);
 }
 
 void Endmenu::pressedstart(bool)

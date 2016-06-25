@@ -9,6 +9,7 @@
 #include"Endmenu.h"
 #include"Play.h"
 #include "startmenuer.h"
+#include <QMediaPlayer>
 
 
 
@@ -20,9 +21,10 @@ public:
 
 
     void startgame();
-    void endgame();
+    void endgamemedium();
+    void endgameeasy();
     void playagain();
-
+    QMediaPlayer * gameover;
     //void newgame();
 //    QTimer * timer;
 //     Endmenu *end;

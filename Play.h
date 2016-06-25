@@ -11,6 +11,9 @@
 #include<QGraphicsPixmapItem>
 #include<QTimer>
 #include <QObject>
+#include"score.h"
+#include "whiteblock2.h"
+#include <QMediaPlayer>
 
 class Play:public QObject
 {
@@ -21,12 +24,16 @@ public:
     QGraphicsScene * scene;
     Ball *ball;
     Mediumwall *mediunmwall1;
-
+    Mediumwall *mediunmwall2;
+    Score *score;
     Easywall * easywall1;
     int wall_num=1;
 
     QTimer * timer2 = new QTimer();
     QGraphicsView *Pview = new QGraphicsView();
+
+private:
+    Whiteblock2 * whiteblock;
 public slots:
     void makewall();
 

@@ -7,14 +7,22 @@
 #include <QGraphicsView>
 #include <QWidget>
 #include <QGraphicsScene>
+#include <QObject>
+#include <QTimer>
 
-class Ball:public QGraphicsPixmapItem
+class Ball: public QObject ,public QGraphicsPixmapItem
 {
+    Q_OBJECT
 public:
     Ball();
     void mouseMoveEvent(QGraphicsSceneMouseEvent * event);
     void mousePressEvent(QGraphicsSceneMouseEvent * event);
-
+    void changesize();
+    void changepic();
+    QTimer * timer = new QTimer();
+    int x=1;
+public slots:
+    void rotate();
 private:
     QPoint offset;
 };

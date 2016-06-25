@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QPushButton>
 #include<QGraphicsView>
+#include"score.h"
 
 class StartMenueR : public QObject
 {
@@ -12,6 +13,7 @@ class StartMenueR : public QObject
 public:
     StartMenueR(QObject *parent=0);
     QGraphicsView *v = new QGraphicsView();
+    Score *score;
 private:
     //QGraphicsView * view;
     QGraphicsScene * scene;

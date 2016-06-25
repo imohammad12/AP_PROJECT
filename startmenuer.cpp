@@ -14,7 +14,7 @@ StartMenueR::StartMenueR(QObject *parent) : QObject(parent)
 
     v->setScene(scene);
     QPixmap back(":/startmenu/cool-background.jpg");
-    scene->setBackgroundBrush(back.scaled(500,300,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+    scene->setBackgroundBrush(back.scaled(500,500,Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
     play = new QPushButton(" Let's Play ");
     play->setGeometry(50,100,100,50);
     scene->addWidget(play);
@@ -29,6 +29,9 @@ StartMenueR::StartMenueR(QObject *parent) : QObject(parent)
     qDebug() << "got end of startmenuer";
     v->show();
 
+    score=new Score;
+        score->showtopscore();
+        scene->addWidget(score->label);
 }
 
 void StartMenueR::pressedstartkey(bool)

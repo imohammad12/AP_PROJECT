@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui \
+         multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -21,7 +22,10 @@ SOURCES += main.cpp \
     Gamecontroller.cpp \
     Endmenu.cpp \
     Easywall.cpp \
-    ball.cpp
+    ball.cpp \
+    score.cpp \
+    whiteblock.cpp \
+    whiteblock2.cpp
 
 HEADERS  += \
     Walls.h \
@@ -32,7 +36,10 @@ HEADERS  += \
     Gamecontroller.h \
     Endmenu.h \
     Easywall.h \
-    ball.h
+    ball.h \
+    score.h \
+    whiteblock.h \
+    whiteblock2.h
 
 FORMS    += mainwindow.ui
 
